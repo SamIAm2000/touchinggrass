@@ -1,0 +1,75 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI; // Required for working with UI elements
+using System.Collections;
+
+public class ScoreSystem : MonoBehaviour
+{
+    // public TextMeshProUGUI scoreText; // Assign this in the inspector with your UI Text element
+    public int score = 0; // Initial score
+    public Text scoreBoardText;
+    private int time = 45;
+    public Text timeText; // Change this line
+    public Text finalMessageText; // Change this line
+
+    public AudioSource audio1;
+    // Start is called before the first frame update
+    void Start()
+    {
+        UpdateScoreText(); // Initial score update
+        //StartCoroutine(UpdateTimeText());
+    }
+
+    // Method to add points and update the score display
+    public void AddScore(int points)
+    {
+        score += points;
+        UpdateScoreText();
+        audio1.Play();
+    }
+
+    // Method to update the score text UI
+    private void UpdateScoreText()
+    {
+        scoreBoardText.text = "Score: " + score.ToString();
+        // Debug.Log("Current Score: " + score);
+    }
+
+    // Update is called once per frame
+    IEnumerator UpdateTimeText()
+    {
+        while (time >= 0)
+        {
+            timeText.text = "Time: " + time.ToString() + "             ";
+            yield return new WaitForSeconds(1);
+            time--; // Decrease time each second
+
+            if (time <= 0)
+            {
+                // Stop the game when time is 0
+                Time.timeScale = 0;
+                DisplayFinalMessage();
+            }
+        }
+    }
+
+    // void DisplayFinalMessage()
+    // {
+    //     finalMessageText.text = "Game over. \nScore: \n" + score.ToString();
+    //     Invoke(Application.Quit(), 4);
+    //     ;
+    // }
+    void DisplayFinalMessage()
+    {
+        finalMessageText.text = "Game over. \nScore: \n" + score.ToString();
+        
+        // Invoke the QuitApplication method after the specified delay
+        Invoke("QuitApplication", 5f);
+    }
+
+    void QuitApplication()
+    {
+        // Quit the application
+        Application.Quit();
+    }
+}
