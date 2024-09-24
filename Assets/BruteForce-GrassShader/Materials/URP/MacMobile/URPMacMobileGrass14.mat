@@ -61,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e1f3da621d899e341b0c9d832b1d57d0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4e1d764fa7e47f34eae88e37253c2542, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -69,7 +69,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NoGrassTex:
-        m_Texture: {fileID: 2800000, guid: 9dd5094df1a6d804c9ce68d7847e4969, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7f25c6183047a8a4bb1552aab341ba92, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise:
@@ -90,14 +90,14 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FadeDistanceEnd: 44.4
-    - _FadeDistanceStart: 23.72
+    - _FadeDistanceEnd: 500
+    - _FadeDistanceStart: 500
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _GrassCut: 0
-    - _GrassSaturation: 2
-    - _GrassShading: 0.16
+    - _GrassSaturation: 3.45
+    - _GrassShading: 0.022
     - _GrassThinness: 0.9
     - _GrassThinnessIntersection: 0.2
     - _Metallic: 0
@@ -129,9 +129,9 @@ Material:
     - _WorldScale: 10
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.34202564, g: 0.3962264, b: 0.34558806, a: 1}
+    - _Color: {r: 0.31134775, g: 0.38679248, b: 0.0784532, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GroundColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+    - _GroundColor: {r: 0.15686275, g: 0.15686275, b: 0.15686275, a: 1}
     - _ProjectedShadowColor: {r: 0.241, g: 0.22633043, b: 0.02305217, a: 1}
-    - _SelfShadowColor: {r: 0.3026154, g: 0.46226418, b: 0, a: 1}
+    - _SelfShadowColor: {r: 0.19699392, g: 0.3018868, b: 0, a: 1}
   m_BuildTextureStacks: []

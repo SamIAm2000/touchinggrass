@@ -63,23 +63,23 @@ Material:
     - _CloudSoftness: 0.5
     - _CloudSpeed: 5
     - _CloudThickness: 0.1
-    - _CloudTwirl: 0.35
-    - _DayBrightness: 2
-    - _DayScatterStrength: 1
+    - _CloudTwirl: 0.5
+    - _DayBrightness: 1.9
+    - _DayScatterStrength: 0.6
     - _DensityAtSeaLevel: 1.225
-    - _DensityPower: 300
-    - _EveningBrightness: 1
-    - _EveningScatterStrength: 2
-    - _EveningThreshold: 0
+    - _DensityPower: 38.8
+    - _EveningBrightness: 0.48
+    - _EveningScatterStrength: 2.9
+    - _EveningThreshold: 3.95
     - _IndexOfRefraction: 180
     - _K: 2
     - _N: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Saturation: 1
+    - _Saturation: 0.82
     - _ScaledHeight: 8
     - _ScatterStrength: 20
-    - _StarBrightness: 0
+    - _StarBrightness: 500
     - _StarJitterSpeed: 0.1
     - _StarRotateSpeed: 5
     - _StarScale: 2
@@ -87,8 +87,8 @@ Material:
     - _StarSpeed: 0.1
     - _StarThreshold: 20
     - _Step: 0.6
-    - _SunIntensity: 5.4
-    - _SunSize: 0.01
+    - _SunIntensity: 0.2
+    - _SunSize: 0.103
     - _WaveLength: 0
     - _Wavelength: 0
     - _X: 1
@@ -104,7 +104,7 @@ Material:
     - _ScatteringCoefficients: {r: 5.8, g: 13.5, b: 33.1, a: 0}
     - _SizeMultiplier: {r: 1, g: 0.1, b: 1, a: 0}
     - _SkyColour: {r: 1, g: 1, b: 1, a: 1}
-    - _StarColour: {r: 0, g: 0.74242425, b: 1, a: 1}
+    - _StarColour: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     - _SunColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Wavelengths: {r: 621.23, g: 550, b: 440, a: 0}
+    - _Wavelengths: {r: 875.4, g: 657.4, b: 414.4, a: 0}
   m_BuildTextureStacks: []
